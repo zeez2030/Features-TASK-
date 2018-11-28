@@ -28,4 +28,53 @@
     display: grid;
     grid-template-areas: 'left' 'middle' 'right'
   }
+  .featureR , .featureL {
+    margin-bottom: 1rem;
+    padding-bottom:  .2rem;
+  }
+  .icon-feature{
+    color: #53B3CB;
+    font-size: 2rem;
+    margin: .5rem;
+  }
+  .feature-image{
+    width: 50%;
+  }
+  .right-section{
+    position: relative;
+    top: 0%;
+    left:0%
+  }
+  .left-section{
+    position: relative;
+    top: 0%;
+    left:0%;
+
+  }
+  .l-para{
+    width: 100%;
+  }
+  .flix-l h4{
+    position: absolute;
+    left: 15%;
+  }
+  .left-icon{
+    position: relative;
+    left:0%;
+    top: 3%;
+  }
+}
+@media screen and (min-width: 767px){
+
+  .header-buttons {
+
+    padding-bottom: 2rem;
+  }
+
+  .about-img{
+    position: relative;
+    left:-20%;
+  }
+
+
 }
