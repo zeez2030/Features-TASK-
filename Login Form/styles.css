@@ -1,0 +1,97 @@
+
+.cont{
+  background-image: linear-gradient(to bottom right, #060247, #FF4EBF);
+  width: 110%;
+  height: 1190px;
+  position: relative;
+
+}
+.login-contain{
+  background-color: white;
+  width:70%;
+  height: 70%;
+  position: absolute;
+  left:25%;
+  top: 10%;
+
+
+}
+.login-header{
+  margin-top: 2rem;
+}
+.form{
+  margin-top:  5rem;
+}
+.email,.password{
+  margin-bottom: 2.5rem;
+}
+.email i{
+  font-size: 1.3rem;
+  margin-right: 1.3rem;
+}
+.password i {
+  font-size: 1.3rem;
+  margin-right: 1.3rem;
+}
+.email input, .password input{
+  background: none;
+  outline: none;
+  width:25%;
+  border:0;
+  border-bottom: 1px solid #ddd;
+font-size: 1.5rem;
+}
+.check input{
+  font-size: 10rem;
+  margin-right: 0.5rem;
+}
+.rem-me {
+  font-size: 1.5rem;
+  color:#888;
+}
+.login-with{
+  font-size: 1.2rem;
+  color: #888;
+}
+.login{
+  margin-top: 2.5rem;
+  background-color:  #FF4E66;
+  width: 35%;
+  height: 100%;
+  border: 1px solid #FF4E66;
+  border-radius: .5rem;
+  margin-bottom: 2rem;
+
+}
+.login-button {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0rem;
+}
+.flix{
+  margin-top: 2rem;
+  display: inline-flex;
+  position: relative;
+  left:40%;
+  color: blue;
+  font-size: 2rem;
+}
+.flix i{
+  margin-right: 1.5rem;
+}
+.social{
+  margin-bottom: 5rem;
+}
+.social a{
+  text-decoration: none;
+}
+.not-mem p{
+  color: #777;
+  margin-bottom: 2rem;
+}
+.not-mem button{
+  font-size: 1.3rem;
+}
