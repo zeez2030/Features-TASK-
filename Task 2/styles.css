@@ -1,0 +1,70 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.margin{
+    margin-top: 4rem;
+}
+.gray{
+    background-color: #ddd;
+    margin-bottom: 2rem;
+    padding: 2rem;
+
+}
+
+form{
+    background-color: bisque
+}
+.button-div button{
+    width: 80%;
+    margin-top: 1rem;
+    
+}
+#Visit{
+    color: white;
+}
+.form-control{
+    border:0;
+    border-bottom: 1px solid black;
+    border-radius: .3rem;
+    outline: 0;
+    background: none;
+    width: 32%;
+    text-align: left;
+    transition: 0.6s;
+    text-align: center
+     
+}
+
+.form-control:focus{
+    width:100%;
+    border: 2px solid black;
+    background: white;
+}
+.URL-box{
+    background-color: #673B42;
+    width:100%;
+    padding: 3rem;
+}
+.book-h3{
+    width: 15%;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    box-shadow: 0;
+    border: 1px solid darkkhaki;
+    transition: 0.3s;
+    background: #673B58;
+    padding: 0.2rem;
+}#results{
+    background-color: #674A3B
+;
+}
+.book-h3:hover{
+    width: 16%;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    background: none;
+    outline: none;
+    border-radius: 1rem;
+    border:2px solid #d65e0e;
+}
