@@ -16,7 +16,7 @@ const remove = function (id) {
     })
     if (index > -1) {
         sites.splice(index, 1)
-         
+
 
     }
 }
@@ -34,15 +34,15 @@ const renderSites = function (sites) {
         Result.appendChild(divIT)
         // create a header to insert the Name of URL and create the two buttons
         let showIt = document.createElement('h3')
-        showIt.setAttribute('class' , 'book-h3')
+        showIt.setAttribute('class', 'book-h3')
         showIt.textContent = site.shortcut
         divIT.appendChild(showIt)
 
-        let visitBtn = document.createElement('a')
+        let visitBtn = document.createElement('button')
         let url = document.getElementById("URL").value
-        visitBtn.setAttribute('class', 'btn btn-primary mx-4')
+        visitBtn.setAttribute('class', 'btn btn-outline-primary mx-4')
         visitBtn.setAttribute('id', 'Visit')
-        visitBtn.textContent = 'visit site'
+        visitBtn.textContent = 'Visits'
         divIT.appendChild(visitBtn)
         visitBtn.addEventListener('click', function () {
             window.open(url, '_blank');
@@ -55,9 +55,9 @@ const renderSites = function (sites) {
         console.log(site.id)
         deleteBtn.addEventListener('click', function () {
             remove(site.id)
-           renderSites(sites)
-          
-       })
+            renderSites(sites)
+
+        })
 
     })
 

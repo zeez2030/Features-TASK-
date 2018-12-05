@@ -13,29 +13,32 @@
 
 <body>
     <div class="header text-center gray mb">
-        <h1>url checker</h1>
+        <h1 class="display-3">Bookmarker</h1>
     </div>
-    <form class="container margin " action="#">
-        <div class="form-group ">
-            <label for="exampleInputEmail1">Shortcut</label>
-            <input type="text" class="form-control" id="shortcut" aria-describedby="emailHelp" placeholder="Shortcut">
+    <!--    place where the form and button will be placed -->
+    <div class="form-box text-center container margin">
+        <h1 class="display-4  header">Bookmark Your Favourite Sites</h1>
+        <form class="  " action="#">
+            <div class="form-group ">
+                <label class="lead font-weight-bold">Site Name</label>
+                <input type="text" class="formm-control" id="shortcut" aria-describedby="emailHelp" placeholder="website name">
 
-        </div>
-        <div class="form-group ">
-            <label for="exampleInputPassword1">Enter URL</label>
-            <input type="text" class="form-control" id="URL" placeholder="URL">
-        </div>
+            </div>
+            <div class="form-group ">
+                <label class="lead font-weight-bold">Site URL</label>
+                <input type="text" class="formm-control" id="URL" placeholder="website URL">
+            </div>
 
-        <div class="text-center button-div">
-            <button type="submit" class="btn btn-primary" id="submit">Submit</button></div>
-    </form>
-    
-    <div id="" class="mt-5 results">
-        <h1 class="display-3">Bookmarks : </h1>
+            <div class="text-center button-div">
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button></div>
+        </form>
+    </div>
+    <!--    here where javascript will print the outputs -->
+    <div id="" class="mt-5 results container">
         <div id="results">
-            
+
         </div>
-        
+
     </div>
 
 
