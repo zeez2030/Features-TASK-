@@ -1,6 +1,8 @@
 const sites = []
-const validate = function (url,name) {
 
+//function to check that url is valid and that the name input isnt empty 
+
+const validate = function (url,name) {
     var pattern = /^((https?|ftp|smtp):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/;
     if (pattern.test(url) && name !="") {
 
@@ -10,6 +12,8 @@ const validate = function (url,name) {
     return false;
 
 }
+
+//function to remove a bookmark by id 
 const remove = function (id) {
     const index = sites.findIndex((site) => {
         return site.id == id
@@ -21,6 +25,7 @@ const remove = function (id) {
     }
 }
 
+//fucntion to show and update any event happen to the sites
 const renderSites = function (sites) {
     document.getElementById('results').innerHTML = ''
     sites.forEach(function (site) {
@@ -63,6 +68,8 @@ const renderSites = function (sites) {
 
 }
 
+
+//what happens when submit button is clicked
 document.getElementById("submit").addEventListener('click', function (e) {
     var url = document.getElementById("URL").value;
     let shortcut = document.getElementById('shortcut').value;
@@ -72,7 +79,7 @@ document.getElementById("submit").addEventListener('click', function (e) {
             shortcut: shortcut,
             id: uniqueId
         })
-        renderSites(sites)
+        renderSites(sites) //makes a new bookmark if validate return true so that url is valid and the site name isnt empty 
     } else {
         if(shortcut=="") alert("Name must have value")
         else
