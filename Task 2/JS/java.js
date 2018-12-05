@@ -1,8 +1,8 @@
 const sites = []
-const validate = function (url) {
+const validate = function (url,name) {
 
     var pattern = /^((https?|ftp|smtp):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/;
-    if (pattern.test(url)) {
+    if (pattern.test(url) && name !="") {
 
         return true;
     }
@@ -67,13 +67,15 @@ document.getElementById("submit").addEventListener('click', function (e) {
     var url = document.getElementById("URL").value;
     let shortcut = document.getElementById('shortcut').value;
     let uniqueId = uuidv4()
-    if (validate(url)) {
+    if (validate(url,shortcut)) {
         sites.push({
             shortcut: shortcut,
             id: uniqueId
         })
         renderSites(sites)
     } else {
+        if(shortcut=="") alert("Name must have value")
+        else
         alert("Url is not valid!");
     }
 })
